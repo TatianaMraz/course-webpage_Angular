@@ -5,19 +5,28 @@
         </button>
     </div>
 </div>
+<hr>
 <div class="row">
-    <div class="col-xs-12">
-        <a href="#" class="list-group-item clearfix">
-            <div class="pull-left">
+    <div class="col-xs-12 list-group">
+        <a href="#" 
+            class="list-group-item list-group-item-action clearfix"
+            *ngFor="let recipe of recipes"
+        >
+            <div class="float-start">
                 <h4 class="list-group-item-heading">
-                    Recipe name
+                    {{ recipe.name }}
                 </h4>
                 <p class="list-group-item-text">
-                    Description
+                    {{ recipe.description }}
                 </p>
             </div>
-            <span class="pull-right">
-                <img src="" alt="" class="img-responsive" style="max-height: 50px">
+            <span class="float-end">
+                <img 
+                    [src]="recipe.imagePath" 
+                    alt="{{ recipe.name }}" 
+                    class="img-responsive" 
+                    style="max-height: 80px"
+                >
             </span>
         </a>
         <app-recipe-item></app-recipe-item>
