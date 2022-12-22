@@ -25,9 +25,22 @@
             </ul>
             <!-- dropdown button -->
             <ul class="navbar navbar-nav ">
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" role="button">Manage</a>
-                    <ul class="dropdown-menu">
+                <li class="nav-item dropdown" 
+                    appDropdown
+                >
+                    <a href="#" 
+                        class="nav-link dropdown-toggle" 
+                        role="button"
+                        data-toggle="dropdown"
+                        id="dropdownMenuLink"
+                        
+                    >
+                        Manage
+                    </a>
+
+                    <ul class="dropdown-menu" 
+                        aria-labelledby="dropdownMenuLink"
+                    >
                         <li class="dropdown-item">
                             <a href="#" class="nav-link">Save data</a>
                         </li>

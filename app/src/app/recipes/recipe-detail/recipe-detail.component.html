@@ -18,14 +18,24 @@
 <!-- manage recipe button -->
 <div class="row">
     <div class="col-xs-12">
-        <div class="btn-group">
-            <button
+        <div class="dropdown" 
+            appDropdown
+        >
+            <a
                 type="button"
                 class="btn btn-primary dropdown-toggle"
+                id="dropdownMenuLink" 
+                data-toggle="dropdown"
+                aria-haspopup="true" 
+                aria-expanded="false"
+                appDropdown
             >
                 Manage recipe
-            </button>
-            <ul class="dropdown-menu">
+            </a>
+            <ul class="dropdown-menu" 
+                aria-labelledby="dropdownMenuLink"
+                style="top: 40px; left: 0;"
+            >
                 <li class="dropdown-item">
                     <a href="#" class="nav-link">To shopping list</a>
                 </li>
