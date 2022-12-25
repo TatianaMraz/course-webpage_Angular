@@ -10,7 +10,7 @@ export class RecipeService {
     private recipes: Recipe[] = [
         new Recipe(
             'first recipe', 
-            'recipe description', 
+            'first recipe description', 
             '../../../assets/img/1.png',
             [
                 new Ingredient('meat', 1),
@@ -18,8 +18,8 @@ export class RecipeService {
             ]
         ),
         new Recipe(            
-            'first recipe', 
-            'recipe description', 
+            'second recipe', 
+            'second recipe description', 
             '../../../assets/img/2.png',
             [
                 new Ingredient('buns', 2),
